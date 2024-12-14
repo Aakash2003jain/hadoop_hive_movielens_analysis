@@ -117,6 +117,12 @@ STORED AS TEXTFILE
 LOCATION '/user/movieratings/';
 
 ```
+### Step 5: Verify Data Loading
+After creating the table, you can run a simple query to ensure that the data is loaded correctly:
+```bash
+SELECT * FROM movie_ratings LIMIT 10;
+```
+This query will return the first 10 rows from the movie_ratings table.
 
 ## Features
 
@@ -157,9 +163,3 @@ This project provides an end-to-end solution for processing and querying movie r
 
 These features ensure that this project is efficient, scalable, and ready for real-world applications in big data analytics and data processing.
 
-### Step 5: Verify Data Loading
-After creating the table, you can run a simple query to ensure that the data is loaded correctly:
-```bash
-SELECT * FROM movie_ratings LIMIT 10;
-```
-This query will return the first 10 rows from the movie_ratings table.
