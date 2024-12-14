@@ -96,5 +96,5 @@ After uploading the dataset, you can verify that it has been successfully placed
 
 ```bash
 hdfs dfs -ls /user/movieratings
-``
+```
 This command will list the contents of the /user/movieratings directory in HDFS, ensuring the dataset is present.
