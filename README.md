@@ -42,13 +42,7 @@ Ensure you have the following installed on your system:
 
 Follow these steps to run the project on your local Hadoop-Hive setup:
 
-### Step 1: Clone the Repository
-```bash
-git clone https://github.com/Aakash2003jain/hadoop_hive_movielens_analysis.git
-cd hadoop_hive_movielens_analysis
-```
-
-### Step 2: Run Hadoop Daemons
+### Step 1: Run Hadoop Daemons
 a) Start Hadoop daemons:
 ```bash  
   start-all.cmd
@@ -58,24 +52,24 @@ b) Check if daemons are running:
   jps
 ```
 
-### Step 3: Run Derby Server
+### Step 2: Run Derby Server
 a) Start the Derby Network Server:
 ```bash
   StartNetworkServer -h 0.0.0.0
 ```
-### Step 4: Initialize Hive Schema
+### Step 3: Initialize Hive Schema
 a) Navigate to C:\hive\bin and run the following command:
 ```bash
   hive --service schematool -dbType derby -initSchema
 ```
 
-### Step 5: Start Hive
+### Step 4: Start Hive
 a) Start Hive by running:
 ```bash
 hive
 ```
 
-### Step 6. Success!
+### Step 5. Success!
 You will now be prompted with the Hive command line, ready to run SQL commands.
 
 ## Data Loading and Queries
