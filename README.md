@@ -164,7 +164,7 @@ This project provides an end-to-end solution for processing and querying movie r
 
 These features ensure that this project is efficient, scalable, and ready for real-world applications in big data analytics and data processing.
 
-### Report
+## Report
 A detailed report that includes the following is also available:
 
 Hive Queries: The report contains a list of all the Hive queries used in this project.
