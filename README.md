@@ -9,10 +9,7 @@ This project demonstrates a simple **Big Data Analysis** using **Hadoop** and **
 - [Prerequisites](#prerequisites)
 - [Setup Instructions](#setup-instructions)
 - [Data Loading and Queries](#data-loading-and-queries)
-- [Folder Structure](#folder-structure)
 - [Features](#features)
-- [Screenshots (Optional)](#screenshots)
-- [License](#license)
 
 ---
 
@@ -46,5 +43,5 @@ Follow these steps to run the project on your local Hadoop-Hive setup:
 
 ### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/your-username/hive-movie-ratings-analysis.git
-cd hive-movie-ratings-analysis
+git clone https://github.com/Aakash2003jain/hadoop_hive_movielens_analysis.git
+cd hadoop_hive_movielens_analysis
