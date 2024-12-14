@@ -58,7 +58,7 @@ Navigate to the sbin directory:
 ```bash
 cd C:\Hadoop\sbin
 ```
-### Stop Hadoop Services:
+### Step 3: Start all the necessary Hadoop daemons (HDFS, YARN, and other components) in a single command. 
 ```bash
  start-all
 ```
