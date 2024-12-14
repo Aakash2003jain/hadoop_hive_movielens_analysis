@@ -82,8 +82,10 @@ You will now be prompted with the Hive command line, ready to run SQL commands.
 
 To load the dataset into Hadoop's HDFS and Hive, follow these steps:
 
-### Step 1: Prepare the Dataset
-Ensure that your dataset is in CSV format (`movielens.csv`) and is located in the `data/` directory of the project.
+### Step 1: Download the Dataset:
+   - Download the movie ratings dataset from the following link:
+     - [MovieLens 20M Dataset](https://files.grouplens.org/datasets/movielens/ml-20m.zip)
+   - Extract the zip file. You will find multiple CSV files, including `ratings.csv`.
 
 ### Step 2: Upload the Dataset to HDFS
 Use the following command to upload the dataset into HDFS. This command will create a directory `/user/movieratings` in HDFS and place the dataset there.
