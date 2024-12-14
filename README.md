@@ -92,8 +92,10 @@ Use the following command to upload the dataset into HDFS. This command will cre
 
 ```bash
 hdfs dfs -mkdir /user/movieratings
-hdfs dfs -put data/movielens.csv /user/movieratings
+hdfs dfs -put data/ratings.csv /user/movieratings
 ```
+**Note**: Replace `data/ratings.csv` with the actual file path where you have extracted the `ratings.csv` file on your local system.
+
 ### Step 3: Verify the Dataset in HDFS
 After uploading the dataset, you can verify that it has been successfully placed in HDFS using the following command:
 
