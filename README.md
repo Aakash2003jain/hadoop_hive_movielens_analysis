@@ -117,3 +117,9 @@ STORED AS TEXTFILE
 LOCATION '/user/movieratings/';
 
 ```
+### Step 5: Verify Data Loading
+After creating the table, you can run a simple query to ensure that the data is loaded correctly:
+```bash
+SELECT * FROM movie_ratings LIMIT 10;
+```
+This query will return the first 10 rows from the movie_ratings table.
