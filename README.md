@@ -47,20 +47,34 @@ git clone https://github.com/Aakash2003jain/hadoop_hive_movielens_analysis.git
 cd hadoop_hive_movielens_analysis
 ```
 
-### Step 2: Start Hadoop Services
-Run Command Prompt as Administrator:
-
-Right-click on the Command Prompt and select Run as Administrator.
-Navigate to the sbin directory:
-
-Open Command Prompt as Administrator.
-Navigate to the sbin directory:
-```bash
-cd C:\Hadoop\sbin
+### Step 2: Run Hadoop Daemons
+a) Start Hadoop daemons:
+```bash  
+  start-all.cmd
 ```
-### Step 3: Start all the necessary Hadoop daemons (HDFS, YARN, and other components) in a single command. 
+b) Check if daemons are running:
 ```bash
- start-all
+  jps
 ```
+
+### Step 3: Run Derby Server
+a) Start the Derby Network Server:
+```bash
+  StartNetworkServer -h 0.0.0.0
+```
+### Step 4: Initialize Hive Schema
+a) Navigate to C:\hive\bin and run the following command:
+```bash
+  hive --service schematool -dbType derby -initSchema
+```
+
+### Step 5: Start Hive
+a) Start Hive by running:
+```bash
+hive
+```
+
+### Step 6. Success!
+You will now be prompted with the Hive command line, ready to run SQL commands.
 
 
