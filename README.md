@@ -98,3 +98,22 @@ After uploading the dataset, you can verify that it has been successfully placed
 hdfs dfs -ls /user/movieratings
 ```
 This command will list the contents of the /user/movieratings directory in HDFS, ensuring the dataset is present.
+
+
+### Step 4: Create Hive External Table
+Once the dataset is uploaded to HDFS, you need to create an external table in Hive to link the data. This step will allow you to query the dataset directly using HiveQL.
+
+In Hive CLI, run the following command to create the table:
+```bash
+CREATE EXTERNAL TABLE movie_ratings (
+    userId INT,
+    movieId INT,
+    rating FLOAT,
+    timestamp STRING
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE
+LOCATION '/user/movieratings/';
+
+```
