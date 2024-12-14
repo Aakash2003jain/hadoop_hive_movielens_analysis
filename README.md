@@ -77,7 +77,7 @@ hive
 ### Step 6. Success!
 You will now be prompted with the Hive command line, ready to run SQL commands.
 
-## Data Loading
+## Data Loading and Queries
 
 To load the dataset into Hadoop's HDFS and Hive, follow these steps:
 
@@ -117,6 +117,46 @@ STORED AS TEXTFILE
 LOCATION '/user/movieratings/';
 
 ```
+
+## Features
+
+This project provides an end-to-end solution for processing and querying movie rating data using **Hadoop** and **Hive**. The key features of this project include:
+
+1. **Data Loading and Integration**:
+   - The project enables the loading of large datasets from local systems to Hadoop Distributed File System (HDFS).
+   - It uses Hive to manage the data, allowing for external table creation that references data stored in HDFS.
+   - Supports CSV file format for easy integration with various data sources.
+
+2. **Hive Queries**:
+   - Perform data analysis and querying using HiveQL (Hive's query language).
+   - The project includes sample queries to calculate average ratings, the most popular movies, and other key metrics from the movie rating dataset.
+
+3. **Data Storage in HDFS**:
+   - Efficiently store large datasets in HDFS, enabling fault tolerance and high availability.
+   - Organize data under a specific directory (`/user/movieratings`) in HDFS.
+
+4. **Scalability**:
+   - The project is designed to handle large volumes of data, making it scalable for production-grade datasets.
+   - Uses the power of Hadoop’s distributed system to manage and process data.
+
+5. **External Table Management with Hive**:
+   - External tables in Hive are used to map the data stored in HDFS without importing it into the Hive warehouse, making it easier to work with external data sources.
+   - Supports the creation of tables with various column types, such as INT, FLOAT, and STRING, and defines delimiters for data files.
+
+6. **Simple Data Analysis**:
+   - Query the data to gain insights into the movie ratings, including:
+     - Calculating the average rating per movie.
+     - Identifying the most popular movies based on the number of ratings.
+     - Retrieving top-rated movies for a specific user or set of users.
+
+7. **Integration with Hadoop Ecosystem**:
+   - Leverages the full Hadoop ecosystem for data storage (HDFS), processing (MapReduce or Spark), and querying (Hive).
+
+8. **Command-Line Execution**:
+   - Supports the execution of commands directly from the Hadoop and Hive command line interfaces for easy automation and integration into larger data pipelines.
+
+These features ensure that this project is efficient, scalable, and ready for real-world applications in big data analytics and data processing.
+
 ### Step 5: Verify Data Loading
 After creating the table, you can run a simple query to ensure that the data is loaded correctly:
 ```bash
