@@ -91,3 +91,10 @@ Use the following command to upload the dataset into HDFS. This command will cre
 hdfs dfs -mkdir /user/movieratings
 hdfs dfs -put data/movielens.csv /user/movieratings
 ```
+### Step 3: Verify the Dataset in HDFS
+After uploading the dataset, you can verify that it has been successfully placed in HDFS using the following command:
+
+```bash
+hdfs dfs -ls /user/movieratings
+``
+This command will list the contents of the /user/movieratings directory in HDFS, ensuring the dataset is present.
