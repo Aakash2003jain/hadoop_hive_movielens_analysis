@@ -45,7 +45,7 @@ Follow these steps to run the project on your local Hadoop-Hive setup:
 ### Step 1: Run Hadoop Daemons
 a) Start Hadoop daemons:
 ```bash  
-  start-all.cmd
+  start-all
 ```
 b) Check if daemons are running:
 ```bash
