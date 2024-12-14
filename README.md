@@ -45,3 +45,21 @@ Follow these steps to run the project on your local Hadoop-Hive setup:
 ```bash
 git clone https://github.com/Aakash2003jain/hadoop_hive_movielens_analysis.git
 cd hadoop_hive_movielens_analysis
+```
+
+### Step 2: Start Hadoop Services
+Run Command Prompt as Administrator:
+
+Right-click on the Command Prompt and select Run as Administrator.
+Navigate to the sbin directory:
+
+Open Command Prompt as Administrator.
+Navigate to the sbin directory:
+```bash
+cd C:\Hadoop\sbin
+```
+### Stop Hadoop Services:
+``` start-all
+```
+
+
