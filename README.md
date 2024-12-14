@@ -167,5 +167,5 @@ These features ensure that this project is efficient, scalable, and ready for re
 ## Report
 A detailed report that includes the following is also available:
 
-Hive Queries: The report contains a list of all the Hive queries used in this project.
-Query Outputs: Screenshots of the output of each query are included in the report for easy reference and validation of the results.
+-Hive Queries: The report contains a list of all the Hive queries used in this project.
+-Query Outputs: Screenshots of the output of each query are included in the report for easy reference and validation of the results.
