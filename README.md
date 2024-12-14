@@ -59,7 +59,8 @@ Navigate to the sbin directory:
 cd C:\Hadoop\sbin
 ```
 ### Stop Hadoop Services:
-``` start-all
+```bash
+ start-all
 ```
 
 
