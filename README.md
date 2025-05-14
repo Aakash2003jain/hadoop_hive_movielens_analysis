@@ -169,3 +169,6 @@ A detailed report that includes the following is also available:
 The report contains a list of all the Hive queries used in this project.
 ### Query Outputs: 
 Screenshots of the output of each query are included in the report for easy reference and validation of the results.
+
+## License
+   This project is licensed under the MIT License. See the LICENSE file for more details.
